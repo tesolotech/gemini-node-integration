@@ -11,6 +11,7 @@ Gemini is an AI-powered content generator built using Node.js and Google's Gener
 - [Setting Up Environment Variables](#setting-up-environment-variables)
 - [Obtaining API Key](#obtaining-api-key)
 - [Making a POST Request](#making-a-post-request)
+- [Making a POST Request(chat)](#making-a-post-request(chat))
 - [Additional Notes](#additional-notes)
 
 ## Installation
@@ -66,6 +67,18 @@ To generate content using Gemini, make a POST request to `http://localhost:3000/
 ```json
 {
   "prompt": "Who will become my future girl friend"
+}
+```
+
+You will receive a response with the generated content.
+
+## Making a POST Request(chat)
+
+To generate content using Gemini, make a POST request to `http://localhost:3000/chat` with the following JSON payload:
+
+```json
+{
+  "prompt": "How can i learn more about ai"
 }
 ```
 
